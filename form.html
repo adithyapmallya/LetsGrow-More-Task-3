@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="box">
+        <h1>STUDENT  ENROLLMENT  FORM</h1>
+        <div class="container">
+            <img src="form.jpg"alt="">
+            <div class="form">
+                <center><h2 style="color: #3786bd;">Enrollment Form</h2></center> 
+                <form>
+                    <div class="f_name">
+                        <label for="f_name">First Name </label>
+                        <input type="text" id="f_name" placeholder="" required>
+                    </div>
+                    <div class="l_name">
+                        <label for="l_name">Last Name </label>
+                        <input type="text" id="l_name" placeholder="" required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Gender </label>
+                        <input type="radio" name="male-female" id="male" value="Male" checked required>Male
+                        <input type="radio" name="male-female" id="female" value="Female">Female
+                    </div>
+                    
+                    <div class="phn">
+                        <label for="phn">Contact Number </label>
+                        <input type="number" id="phn" placeholder="" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email </label>
+                        <input type="email" id="email" placeholder="" required>
+                    </div>
+                    <div class="image">
+                        <label for="url">Image URL <span>(jpg,jpeg,png format)</span></label>
+                        <input type="url" id="url" placeholder="Ex. https://abc.jpg"
+                        value="https://cdn-icons-png.flaticon.com/512/1253/1253654.png"required>
+                    </div>  
+                    <div class="skills">
+                        <label for="skills">Skills</label>           
+                        <input type="checkbox" value="Javascript" id="cpp" class="checkbox" checked>Javascript
+                        <input type="checkbox" value="Ruby" id="c" class="checkbox">Ruby
+                        <input type="checkbox" value="PHP" id="html" class="checkbox">PHP
+                        <input type="checkbox" value="Front-End" id="css" class="checkbox">Front-End
+                        <input type="checkbox" value="Angular" id="css" class="checkbox">Angular
+                    </div>
+                    <div class="button">
+                        <button type="button" id="submit">SUBMIT</button>
+                        <button type="reset" id="reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<div class="output">
+                <h2 style="color: #ffffff;">STUDENT DETAILS</h2>
+                <br>
+                <div class="cardContainer" id="cardContainer">
+                </div>
+            </div>
+        </div>
+    <script src="form.js"></script>
+</body>
+</html>
